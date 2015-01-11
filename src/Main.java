@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -13,6 +12,7 @@ public class Main {
         //
         // create first 6 phone models (leftArray):
         ArrayList leftArray = new ArrayList(6);
+        //local code review (vtegza): use generics @ 1/11/2015
         leftArray.add(new Phone.Builder().vendor("LG").model("A100").build());
         leftArray.add(new Phone.Builder().vendor("LG").model("A101").build());
         leftArray.add(new Phone.Builder().vendor("LG").model("A102").build());
@@ -21,6 +21,7 @@ public class Main {
         leftArray.add(new Phone.Builder().vendor("LG").model("A105").build());
         //
         // create second 6 phone models (rightArray):
+        //local code review (vtegza): use generics @ 1/11/2015
         ArrayList rightArray = new ArrayList(6);
         rightArray.add(new Phone.Builder().vendor("SONY").model("SE15").build());
         rightArray.add(new Phone.Builder().vendor("SONY").model("SE16").screenSize(17).build());

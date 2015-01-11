@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -7,6 +6,8 @@ import java.util.ArrayList;
  */
 
 public class ArrayHelper {
+
+    //local code review (vtegza): no need for comments here @ 1/11/2015
     //
     // resource for delegating:
     private final ArrayHelperResource resource;

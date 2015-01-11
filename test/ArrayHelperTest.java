@@ -1,4 +1,5 @@
 import junit.framework.TestCase;
+
 import java.util.ArrayList;
 
 public class ArrayHelperTest extends TestCase {
@@ -18,8 +19,11 @@ public class ArrayHelperTest extends TestCase {
         ArrayHelperResource resource = new ArrayHelperResource();
         //
         // result:
+        //local code review (vtegza): you should create your resource with Mockito and pass it to testClass @ 1/11/2015
+        //local code review (vtegza): describe mock behave with when @ 1/11/2015
         ArrayHelper AH = new ArrayHelper(resource);
         AH.println(leftArray);
+        //local code review (vtegza): check interactions with mock @ 1/11/2015
     }
 
     public void testMerge() throws Exception {
@@ -46,8 +50,12 @@ public class ArrayHelperTest extends TestCase {
         ArrayHelperResource resource = new ArrayHelperResource();
         //
         // result:
+        //local code review (vtegza): you should create your resource with Mockito and pass it to testClass @ 1/11/2015
+        //local code review (vtegza): describe mock behave with when @ 1/11/2015
         ArrayHelper AH = new ArrayHelper(resource);
         ArrayList merged = AH.merge(leftArray, rightArray);
         AH.println(merged);
+        //local code review (vtegza): check interactions with mock @ for merge 1/11/2015
+        //local code review (vtegza): check interactions with mock @ println 1/11/2015
     }
 }
